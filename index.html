@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTDXHTML1.0Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<html> 
+    <head>
+      	<meta charset="UTF-8">
+		<link rel="icon" href="https://cdn.discordapp.com/attachments/795758905904988200/932152168704774234/UMR_round.jpeg">
+		<title>FORM Q1</title>
+		<link rel="stylesheet" href="style.css" />
+    </head>
+    <body onload="init();">
+        <form name="calculator" action="" >
+            <table>
+                <tr>
+                    <td width="40%">Mark:</td>
+                    <td style="text-align: left;"><input type="text" id="mrk1"></td>
+                </tr>
+                <tr>
+                    <td width="40%">Mark:</td>
+                    <td style="text-align: left;"><input type="text" id="mrk2"></td>
+                </tr>
+                <tr>
+                    <td width="40%">Mark:</td>
+                    <td style="text-align: left;"><input type="text" id="mrk3"></td>
+                </tr>
+                <tr>
+                    <td width="40%">Mark:</td>
+                    <td style="text-align: left;"><input type="text" id="mrk4"></td>
+                </tr>
+                <tr>
+                    <td colspan=2">
+                        <center>
+                            <input type="radio" id="total" name="choice" value="30">
+                            <label for="total">Find total</label>
+                            <input type="radio" id="average" name="choice" value="60">
+                            <label for="average">Find Average</label>
+                        </center>
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="2" align="center" style="text-align: center;font-size: 20px;">
+                        <button type="button"onclick="run()">calculate</button>
+                        <button>Clear</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Result:</td>
+                    <td style="text-align: left;"><input type = "text" id = "result" value="0.00" disabled="disabled"></td>
+                </tr>
+            </table>
+            <button type="button" style="margin:20px;" onclick="ToQ2()">To Question 2</button>
+            <script src="script.js"></script>
+    </body>
+</html>
